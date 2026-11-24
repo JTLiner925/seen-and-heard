@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="round" data-ground="sky" data-buttons="pill" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Missions resources: Seen &amp; Heard</title>
+<meta name="description" content="Videos, books, sermons, films and ways to pray for the nations, in one library.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Missions resources: Seen &amp; Heard">
+<meta property="og:description" content="Sharing tools, unreached people group profiles and missions resources in one app, with a 10/40 globe of every country.">
+<meta property="og:image" content="https://jtliner925.github.io/seen-and-heard/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0f0f0f">
+<link rel="canonical" href="https://jtliner925.github.io/seen-and-heard/resources.html">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400..700&family=Funnel+Sans:wght@400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #0f0f0f; --p-surface: #1a1a1a; --p-ink: #ffffff; --p-muted: #8f8f8f;
+  --p-accent: #1cb47f; --p-accent-ink: #0f0f0f; --p-action: #1cb47f; --p-action-ink: #0f0f0f;
+  --p-inv-bg: #f4ecdc; --p-inv-surface: #ebe0cc; --p-inv-ink: #0b1634; --p-inv-muted: #4b5670;
+  --p-inv-accent: #0b7a54; --p-inv-accent-ink: #ffffff; --p-inv-action: #0b1634; --p-inv-action-ink: #ffffff;
+  --font-display: "Funnel Display", system-ui, sans-serif;
+  --font-text: "Funnel Sans", system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --display-weight: 400;
+  --display-tracking: -0.03em;
+  --display-tracking-xl: -0.04em;
+  --ly-scale: 0.98;
+}
+</style>
+<link rel="stylesheet" href="assets/ui/base.css">
+<link rel="stylesheet" href="assets/ui/checklist/fragment.css">
+<link rel="stylesheet" href="assets/ui/window/fragment.css">
+<link rel="stylesheet" href="assets/ui/doc/fragment.css">
+<link rel="stylesheet" href="assets/ui/chat/fragment.css">
+<link rel="stylesheet" href="assets/ui/notify/fragment.css">
+<link rel="stylesheet" href="assets/ui/files/fragment.css">
+<link rel="stylesheet" href="assets/ui/toggles/fragment.css">
+<link rel="stylesheet" href="assets/ui/search/fragment.css">
+<link rel="stylesheet" href="assets/ui/stat/fragment.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<style>
+  /* the wordmark from the client's logo files, in the page's ink (one-colour knockout for the dark ground) */
+  .brand-mark { display: block; width: 56px; height: 41px; background: var(--ink); -webkit-mask: url(brand/wordmark.png) center / contain no-repeat; mask: url(brand/wordmark.png) center / contain no-repeat; }
+  .brand-mark--lg { width: 87px; height: 64px; }
+  @media (max-width: 639px) { .brand-mark { width: 46px; height: 34px; } }
+  /* hero art: one canvas layer across the whole hero, the words on its calm left */
+  .hero--art { position: relative; }
+  .hero__dots { position: absolute; left: 0; right: 0; top: var(--nav); bottom: 0; width: 100%; height: calc(100% - var(--nav)); z-index: 0; display: block; }
+  .hero--art > .wrap { position: relative; z-index: 1; }
+  /* the need map (page CSS inside the visual) */
+  .need { margin: var(--s-7) 0 0; }
+  .need-map { display: block; width: 100%; height: auto; }
+  .need-map path { stroke: var(--bg); stroke-width: .5; }
+  .need-map path:hover { stroke: var(--ink); stroke-width: 1; }
+  .need-key { display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-5); margin: var(--s-5) 0 0; font-size: var(--t-small); color: var(--muted); }
+  .need-key li { display: flex; align-items: center; gap: var(--s-2); }
+  .need-key i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  /* hero: the app on a phone inside the hero's frame (page CSS: .device) */
+  .device { width: 360px; display: flex; flex-direction: column; gap: 12px; }
+  @media (max-width: 639px) { .device { width: 100%; } }
+  .device__top { display: flex; justify-content: space-between; align-items: center; font: 500 13px/1 var(--font-text); color: var(--u-muted); padding: 2px 8px 6px; }
+  .device__title { font: var(--display-weight) 22px/1.15 var(--font-display); letter-spacing: var(--display-tracking); padding: 0 8px; color: var(--u-ink); }
+  .device .ui-panel { width: 100%; }
+  .device__card { display: grid; gap: 4px; padding: 14px 16px; }
+  .device__label { font: 500 13px/1.3 var(--font-text); color: var(--u-muted, var(--muted)); }
+  .device__big { font: var(--display-weight) 20px/1.2 var(--font-display); letter-spacing: var(--display-tracking); color: var(--u-ink, var(--ink)); }
+  .device__sub { font: 400 13px/1.3 var(--font-text); color: var(--u-muted, var(--muted)); }
+  .app .ui-doc { padding-right: 232px; }
+  @media (max-width: 639px) { .app .ui-doc { padding-right: 32px; } }
+  /* the app frame (sections-library.md, app-frame) */
+  .app.ui { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); margin-top: var(--s-7); background: var(--u-bg); border: 1px solid var(--u-border); border-radius: var(--u-r); box-shadow: var(--u-shadow); }
+  .app > .app__pane { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+  .app > .app__pane + .app__pane { border-left: 1px solid var(--u-line); }
+  .app > .app__pane > .ui-panel { width: 100%; border: 0; border-radius: 0; box-shadow: none; }
+  .app > .app__pane > .ui-doc { width: 100%; }
+  .app > .app__pane::after { content: ""; position: absolute; inset: auto 0 0 0; height: 64px; background: linear-gradient(transparent, var(--u-bg)); pointer-events: none; }
+  @media (min-width: 1024px) and (max-width: 1279px) { .app.ui { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); } }
+  @media (max-width: 1023px) {
+    .app.ui { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+    .app > .app__pane--list { max-height: 252px; }
+    .app > .app__pane--list::after { display: none; }
+    .app .ui-win__side { display: none; }
+    .app .ui-win__body { grid-template-columns: minmax(0, 1fr); }
+    .app > .app__pane + .app__pane { border-left: 0; border-top: 1px solid var(--u-line); }
+  }
+  @media (max-width: 639px) {
+    .app.ui { grid-template-rows: minmax(0, 1fr); }
+    .app > .app__pane--list { display: none; }
+    .app > .app__pane + .app__pane { border-top: 0; }
+  }
+  #tools .panel, #how .panel { --p-h: 336px; }
+  @media (min-width: 1024px) and (max-width: 1279px) { #tools .panel { --p-h: 316px; } #how { --h: 2 } }
+  @media (min-width: 1280px) { #how .panel { --p-h: 440px; } }
+  @media (min-width: 640px) and (max-width: 1023px) { #how { --h: 2 } }
+  @media (max-width: 639px) { #tools .panel { --p-h: 188px; } #how .panel { --p-h: 296px; } }
+</style>
+<style>.hub *{box-sizing:border-box}
+.hub .uotd{background:#fff;color:var(--ink);border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.hub .uotd-head{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #eee}
+.hub .uotd-head strong{font-size:17px}
+.hub .uotd-head a{color:var(--green);font-weight:600;font-size:14px;text-decoration:none;margin-left:14px}
+.hub .uotd iframe{display:block;width:100%;height:760px;border:0;background:#fff}
+.hub .uotd-note{padding:10px 16px;font-size:13px;color:var(--muted);border-top:1px solid #eee}
+.hub .note{font-size:13px;opacity:.7;margin-top:12px}
+.hub .b-stats{background:var(--navy2);color:#fff}
+.hub .b-tools{background:var(--accent);color:#fff}
+.hub .b-books{background:var(--cream);color:var(--ink)}
+.hub .b-sermons{background:#e7eef4;color:var(--ink)}
+.hub .b-media{background:#1c1c20;color:#fff}
+.hub .b-prayer{background:var(--green);color:#fff}
+.hub .h-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.hub .h-grid.books{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+.hub .h-grid.tools{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.hub .h-card{background:var(--paper);color:var(--ink);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.hub .h-card .body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.hub .h-card h4{margin:0 0 2px;font-size:16px;line-height:1.3}
+.hub .h-card .by{font-size:13px;color:var(--muted);margin-bottom:6px}
+.hub .h-card p{margin:0 0 12px;font-size:14.5px;flex:1}
+.hub .h-card .links a{font-size:14px;font-weight:600;margin-right:14px;color:var(--accent);text-decoration:none}
+.hub .h-card .links a:hover{text-decoration:underline}
+.hub .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);font-weight:700;margin-bottom:4px}
+.hub .b-media .h-card{background:#2a2a30;color:#f1f1f3}
+.hub .b-media .h-card .by, .hub .b-media .h-card p{color:#c8c8d0}
+.hub .b-media .h-card .links a{color:#f3d9a4}
+.hub .b-prayer .h-card .links a{color:var(--green)}
+.hub .media{position:relative;aspect-ratio:16/9;background:#000;display:block;width:100%;border:0;padding:0;cursor:pointer;overflow:hidden}
+.hub .media img{width:100%;height:100%;object-fit:cover;display:block}
+.hub .media iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hub .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.hub .play span{width:58px;height:58px;border-radius:50%;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;transition:transform .15s,background .15s}
+.hub .play span::after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.hub .media:hover .play span{transform:scale(1.1);background:var(--accent)}
+.hub .icon-panel{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff}
+.hub .icon-panel svg{width:84px;height:84px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.hub .icon-panel .big{font-size:52px;font-weight:800;letter-spacing:-.03em}
+.hub .book{background:var(--paper)}
+.hub .cover{aspect-ratio:2/3;background:#e8dfcf;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hub .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.hub .cover .ph{padding:16px;text-align:center;font-weight:700;font-size:17px;line-height:1.25;color:#fff;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#1b3b52,#12293a)}
+.hub .b-books h3{border-left:5px solid var(--accent);padding-left:12px}
+.hub .b-books .btn-amz{display:inline-block;background:#ffd166;color:#1f2933;text-decoration:none;font-weight:700;font-size:13px;padding:7px 12px;border-radius:7px;text-align:center}
+.hub .b-books .btn-amz:hover{background:#ffc233}
+.hub .b-books .h-card p{font-size:13.5px}
+.hub .b-sermons h3{border-left:5px solid var(--navy2);padding-left:12px}
+.hub .b-sermons .h-card{border-top:4px solid var(--navy2)}
+.hub .stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.hub .stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:16px}
+.hub .stat .n{font-size:32px;font-weight:800;color:var(--gold);line-height:1.1;letter-spacing:-.02em}
+.hub .stat .l{font-size:14px;margin-top:4px}
+.hub .stat .s{font-size:12px;opacity:.65;margin-top:6px}
+.hub .callout{background:var(--gold);color:#2a1d00;border-radius:14px;padding:24px;margin:34px 0 8px}
+.hub .callout q{font-size:clamp(19px,3vw,25px);line-height:1.35;display:block;font-weight:700}
+.hub .callout small{display:block;margin-top:8px;font-size:14px}
+.hub .tablewrap{overflow-x:auto}
+.hub table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.07);border-radius:12px;overflow:hidden;font-size:14.5px}
+.hub th, .hub td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(255,255,255,.13)}
+.hub th{background:rgba(255,255,255,.12);font-size:13px}
+.hub tr:last-child td{border-bottom:0}
+.hub .graphic{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px}
+.hub .wmap{width:100%;height:auto;display:block;border-radius:10px}
+.hub .wsea{fill:#0b1634}
+.hub .wband{fill:rgba(224,166,58,.22)}
+.hub .wland path{fill:#2a3d6b;stroke:#0b1634;stroke-width:.4}
+.hub .wwin path{fill:var(--gold);stroke:#0b1634;stroke-width:.4}
+.hub .wwin path:hover{fill:#fff}
+.hub .wline{stroke:#f3d9a4;stroke-width:1.2;stroke-dasharray:6 4}
+.hub .wlab{fill:#f3d9a4;font-size:13px;font-weight:700}
+.hub .maplegend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;margin-top:10px}
+.hub .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.hub .twocol{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
+@media(max-width:760px){.hub .twocol{grid-template-columns:1fr}}
+.hub .donutbox{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.hub .donut{width:190px;height:190px;border-radius:50%;background:conic-gradient(var(--accent) 0 41.8%,var(--gold) 41.8% 51.7%,var(--green) 51.7% 100%);position:relative;flex:none}
+.hub .donut::after{content:"";position:absolute;inset:34px;border-radius:50%;background:var(--navy2)}
+.hub .donut b{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:28px;line-height:1}
+.hub .donut b small{font-size:12px;font-weight:400;opacity:.8;margin-top:4px}
+.hub .dl{font-size:14px;line-height:1.9}
+.hub .people{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;margin:12px 0}
+.hub .people svg{width:100%;height:auto;fill:rgba(255,255,255,.25)}
+.hub .people svg.on{fill:var(--gold)}
+.hub .people.small svg.on{fill:var(--accent)}
+.hub .gcap{font-size:14px}
+.hub .gcap b{color:var(--gold)}
+.hub .bar{height:16px;display:flex;border-radius:8px;overflow:hidden;margin:10px 0 8px}
+.hub .bar span:nth-child(1){background:var(--accent)}
+.hub .bar span:nth-child(2){background:var(--gold)}
+.hub .bar span:nth-child(3){background:var(--green)}
+.hub .legend{font-size:13px;display:flex;flex-wrap:wrap;gap:4px 16px;opacity:.85}
+.hub .b-stats{--vz-surface:#111f45;--vz-ink:#f2f2f2;--vz-ink2:#cdd6e8;--vz-muted:#9fb0cf;--vz-grid:#22325c;--c-blue:#6fa8dc;--c-orange:#ff301a;--c-aqua:#1cb47f}
+.hub .vz-hero{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 6px}
+.hub .vz-hero div{padding:6px 14px;border-left:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column}
+.hub .vz-hero div:first-child{border-left:0;padding-left:0}
+.hub .vz-hero b{font-size:clamp(28px,5vw,52px);line-height:1.05;letter-spacing:-.02em}
+.hub .vz-hero span{font-size:14px;color:var(--vz-ink2)}
+@media(max-width:640px){.hub .vz-hero{grid-template-columns:repeat(2,1fr);row-gap:14px}
+.hub .vz-hero div:nth-child(3){border-left:0;padding-left:0}}
+.hub .vz-h{font-size:24px!important;margin:48px 0 4px!important}
+.hub .vz-sub{margin:0 0 16px;max-width:680px;color:var(--vz-ink2)}
+.hub .vz-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin-top:16px}
+.hub .vz-panel{background:var(--vz-surface);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:18px;color:var(--vz-ink);min-width:0}
+.hub .vz-panel+.vz-panel, .hub .vz-grid+.vz-panel, .hub .vz-panel+.vz-grid{margin-top:16px}
+.hub .vz-title{margin:0 0 14px;font-size:17px;line-height:1.3;font-weight:700;color:var(--vz-ink)}
+.hub .vz-src{font-size:12.5px;color:var(--vz-muted);margin:12px 0 0;line-height:1.45}
+.hub .vz-cap{font-size:13.5px;color:var(--vz-ink2);margin-top:10px}
+.hub .vz-legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--vz-ink2);margin-top:12px}
+.hub .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.hub .vz-row{display:grid;grid-template-columns:minmax(92px,30%) 1fr;align-items:center;gap:10px;padding:5px 0;border-radius:6px;outline:none}
+.hub .vz-row:hover, .hub .vz-row:focus-visible{background:rgba(255,255,255,.06)}
+.hub .vz-label{font-size:13.5px;color:var(--vz-ink2);line-height:1.25}
+.hub .vz-track{position:relative;height:22px;border-left:1px solid #2a3d6b}
+.hub .vz-fill{height:100%;border-radius:0 4px 4px 0;transform-origin:left;animation:vzgrow .8s cubic-bezier(.2,.7,.2,1) both}
+.hub .vz-val{position:absolute;top:50%;transform:translateY(-50%);font-size:13.5px;font-weight:700;color:var(--vz-ink);white-space:nowrap;padding-left:8px}
+
+  @keyframes vzgrow{from{transform:scaleX(0)}}
+@media (prefers-reduced-motion:reduce){.hub .vz-fill, .hub .vz-seg{animation:none}}
+.hub .vz-stack{display:flex;gap:2px;height:36px}
+.hub .vz-seg{display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#0b0b0b;min-width:4px;outline:none;animation:vzgrowx .8s cubic-bezier(.2,.7,.2,1) both;transform-origin:left}
+.hub .vz-seg:first-child{border-radius:6px 0 0 6px}
+.hub .vz-seg:last-child{border-radius:0 6px 6px 0}
+.hub .vz-seg:only-child{border-radius:6px}
+.hub .vz-seg:hover, .hub .vz-seg:focus-visible{filter:brightness(1.15)}
+
+  @keyframes vzgrowx{from{transform:scaleX(0)}}
+.hub .vz-key{display:grid;gap:6px;margin-top:14px;font-size:13.5px;color:var(--vz-ink2)}
+.hub .vz-key div{display:flex;gap:8px;align-items:baseline}
+.hub .vz-key b{color:var(--vz-ink);margin-left:auto;white-space:nowrap;padding-left:10px}
+.hub .vz-donut{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+.hub .vz-donut svg{width:190px;height:190px;flex:none}
+.hub .vz-donut .arc{transition:opacity .15s;cursor:default}
+.hub .vz-donut svg:hover .arc{opacity:.55}
+.hub .vz-donut svg .arc:hover{opacity:1}
+.hub .vz-donut text{fill:var(--vz-ink);text-anchor:middle}
+.hub .vz-donut .key{flex:1;min-width:190px}
+.hub .wmap, .hub .bmap{width:100%;height:auto;display:block;border-radius:10px}
+.hub .wsea{fill:#0b1634}
+.hub .wband{fill:rgba(217,89,38,.18)}
+.hub .wland path, .hub .bland path{fill:#2a3d6b;stroke:#0b1634;stroke-width:.4}
+.hub .wwin path{fill:#ff301a;stroke:#0b1634;stroke-width:.4}
+.hub .wwin path:hover{fill:#ff8a7a}
+.hub .wline{stroke:#ff8a7a;stroke-width:1.2;stroke-dasharray:6 4}
+.hub .wlab{fill:#ff8a7a;font-size:13px;font-weight:700}
+.hub .bub{fill:#6fa8dc;fill-opacity:.8;stroke:#111f45;stroke-width:2;cursor:default}
+.hub .bub:hover, .hub .bub:focus{fill-opacity:1;outline:none;stroke:#fff}
+.hub .blab{fill:#f2f2f2;font-size:14px;font-weight:700;text-anchor:middle;pointer-events:none}
+.hub .people{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;margin:8px 0 4px}
+.hub .people svg{width:100%;height:auto;fill:#2a3d6b}
+.hub .people svg.on{fill:#ff301a}
+.hub .tview{margin-top:10px;font-size:13px;color:var(--vz-ink2)}
+.hub .tview summary{cursor:pointer;color:var(--vz-muted)}
+.hub .tview table{margin-top:8px;background:transparent;font-size:13px}
+.hub .tview th, .hub .tview td{padding:6px 8px}
+.vz-tip{position:fixed;z-index:50;pointer-events:none;background:#0b0b0b;color:#f2f2f2;border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:8px 10px;font-size:13px;line-height:1.4;max-width:260px;box-shadow:0 6px 20px rgba(0,0,0,.4);opacity:0;transition:opacity .08s}
+.vz-tip.on{opacity:1}
+.vz-tip b{display:block}
+.hub .people.small svg.on{fill:#ff301a}
+.hub .umap{width:100%;height:auto;display:block;border-radius:10px}
+.hub .uland path{stroke:#0b1634;stroke-width:.4;transition:opacity .1s}
+.hub .uland path:hover{stroke:#fff;stroke-width:1}
+.hub .vz-two{height:auto;display:flex;flex-direction:column;gap:3px}
+.hub .vz-sub1{position:relative;height:16px}
+.hub .vz-sub1 .vz-fill{height:100%}
+.hub .vz-sub1 .vz-val{font-size:12.5px}
+.hub .vz-track, .hub .vz-sub1{--sc:80%}
+.hub .vz-fill{width:max(calc(var(--w) * var(--sc)),3px)}
+.hub .vz-val{left:calc(max(calc(var(--w) * var(--sc)),3px) + 2px)}
+@media(max-width:560px){.hub .vz-track, .hub .vz-sub1{--sc:52%}
+.hub .vz-row{grid-template-columns:minmax(78px,28%) 1fr;gap:8px}
+.hub .vz-label{font-size:13px}
+.hub .vz-val{font-size:13px}}
+.hub .uland path{stroke:#0b1634;stroke-width:.5}
+.hub .uland path:hover{stroke:#fff;stroke-width:1.4}
+.hub .vz-svg{width:100%;height:auto;display:block}
+.hub .vz-svg text{font-family:inherit}
+.hub .h-tile rect, .hub .col, .hub .h-dot, .hub .bub2, .hub .wf rect{transition:filter .12s}
+.hub .h-tile:hover rect, .hub .h-tile:focus rect, .hub .col:hover, .hub .col:focus, .hub .h-dot:hover, .hub .h-dot:focus, .hub .bub2:hover, .hub .bub2:focus, .hub .wf:hover rect, .hub .wf:focus rect{filter:brightness(1.18)}
+.hub .h-tile:focus, .hub .col:focus, .hub .h-dot:focus, .hub .bub2:focus, .hub .wf:focus, .hub .arc:focus, .hub .vz-ring:focus, .hub .vz-gauge:focus{outline:none}
+.hub .bub2:hover, .hub .bub2:focus{stroke:#fff}
+.hub .wafflesvg{width:230px;max-width:100%;flex:none}
+.hub .donutsvg{width:190px;max-width:100%;flex:none}
+.hub .vz-donut .key{flex:1;min-width:200px}
+.hub .vz-rings{display:flex;flex-wrap:wrap;gap:22px;justify-content:center;padding:6px 0}
+.hub .vz-ring{text-align:center;width:150px;font-size:13.5px;color:var(--vz-ink2);outline:none}
+.hub .vz-ring svg{width:130px;height:130px}
+.hub .vz-gauge{text-align:center;color:var(--vz-ink2);font-size:14px;outline:none;max-width:320px;margin:0 auto}
+.hub .vz-gauge svg{width:100%;height:auto}
+.hub .vz-grid.g21{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+@media(min-width:900px){.hub .vz-grid.g21{grid-template-columns:2fr 1fr}
+.hub .vz-grid.g12{grid-template-columns:1fr 2fr}}
+.hub #cRadial .vz-svg, .hub #cCont .vz-svg{max-width:420px;margin:0 auto}
+.hub #cCont .vz-svg{max-width:640px}
+.hub .vz-key{grid-template-columns:minmax(0,1fr)}
+.hub .vz-key div{flex-wrap:wrap}
+.hub .vz-key b{margin-left:auto}
+@media(max-width:560px){.hub .vz-key b{white-space:normal;text-align:right}
+.hub .vz-key div{min-width:0}}
+
+/* ---- the Hub inside the Seen & Heard page ---- */
+.more__btn { margin-top: var(--s-6); }
+.hub .h-card { border-radius: var(--r-lg); }
+.hub .h-card .body { padding: var(--s-5) var(--s-5) var(--s-5); }
+.hub .h-card h4 { font: 500 var(--t-card)/1.3 var(--font-text); letter-spacing: -.01em; margin: 0 0 var(--s-1); }
+.hub .h-card p { font-size: 15px; line-height: 1.55; }
+.hub .h-card .by { font-size: 14px; }
+.hub .tag { text-transform: none; letter-spacing: 0; font: 500 var(--t-label)/1.2 var(--font-text); margin-bottom: var(--s-2); }
+.hub .h-card .links a { font-weight: 500; font-size: 15px; }
+.hub .vz-panel { border-radius: var(--r-lg); padding: clamp(18px, 2.4vw, 28px); }
+.hub .vz-title { font: 500 var(--t-card)/1.3 var(--font-text); letter-spacing: -.01em; }
+.hub .vz-h { font: var(--display-weight) 30px/1.15 var(--font-display) !important; letter-spacing: var(--display-tracking); margin: var(--s-9) 0 var(--s-2) !important; }
+.hub .vz-hero b { font-weight: 400; letter-spacing: var(--display-tracking-xl); }
+.hub .media, .hub .icon-panel, .hub .cover { border-radius: 0; }
+.hub .h-grid { gap: var(--s-5); }
+@media (max-width: 639px) {
+  .hub .h-grid.books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); }
+  .hub .h-grid.books .h-card .body { padding: var(--s-3); }
+  .hub .h-grid.books .h-card h4 { font-size: 16px; }
+  .hub .h-grid.books .h-card p { font-size: 14px; }
+  .hub .h-grid.books .btn-amz { font-size: 14px; padding: 0 10px; }
+}
+.hub { font-size: 16px; line-height: 1.6; }
+.hub h3 { font-size: 20px; margin: 40px 0 14px; }
+.hub .hub-group { font: 500 19px/1.3 var(--font-text); letter-spacing: var(--display-tracking); margin: var(--s-8) 0 var(--s-5); padding: 0; border: 0; }
+.hub .note { font-size: 14px; opacity: .8; margin-top: 12px; }
+.hub .note a { color: var(--accent); }
+/* The Need, on the navy band */
+.hub-band.b-stats { --vz-surface: #111f45; --vz-ink: #f2f2f2; --vz-ink2: #cdd6e8; --vz-muted: #9fb0cf; --vz-grid: #22325c;
+  background: #0b1634; color: #f2f2f2; border-radius: var(--r-lg); padding: clamp(24px, 4vw, 56px); }
+.hub .vz-panel { border-color: rgba(255,255,255,.08); }
+.hub .vz-hero b { font-family: var(--font-display); font-weight: 400; color: #fff; }
+.hub .vz-hero b:first-child { color: #ff6a55; }
+.hub .vz-h { font-family: var(--font-display); font-weight: 400; }
+.hub .callout { background: #1cb47f; color: #06231a; }
+.hub .people svg { fill: #2a3d6b; }
+.hub .people svg.on { fill: #ff301a; }
+.hub .vz-hero div { border-left-color: rgba(255,255,255,.15); }
+/* tools, on the page's dark ground */
+.hub .hub-band.b-tools { background: none; color: inherit; }
+.hub-band.b-tools .h-card { background: #161b2b; color: #f2f2f2; border: 1px solid rgba(255,255,255,.08); box-shadow: none; }
+.hub-band.b-tools .h-card .by, .hub-band.b-tools .h-card p { color: #cdd6e8; }
+.hub-band.b-tools .tag { color: #8fc1ff; }
+.hub-band.b-tools .h-card .links a { color: #3fd29c; }
+.hub-band.b-tools .icon-panel { background: linear-gradient(135deg, #0b1634, #123d52); }
+/* resources, in the same dark card style as the tools */
+.hub-band.b-res .h-card { background: #161b2b; color: #f2f2f2; border: 1px solid rgba(255,255,255,.08); box-shadow: none; }
+.hub-band.b-res .h-card .by, .hub-band.b-res .h-card p { color: #cdd6e8; }
+.hub-band.b-res .tag { color: #8fc1ff; }
+.hub-band.b-res .h-card .links a { color: #3fd29c; }
+.hub-band.b-res .btn-amz { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; background: transparent; color: #f2f2f2; border: 1px solid rgba(255,255,255,.24); text-decoration: none; font-weight: 500; font-size: 15px; padding: 0 16px; border-radius: 999px; }
+.hub-band.b-res .btn-amz:hover { background: #1cb47f; color: #06231a; border-color: #1cb47f; }
+.hub-band.b-res .cover { background: #1f2638; }
+.hub-band.b-res .cover .ph { background: linear-gradient(160deg, #13265a, #0b1634); }
+.hub-band.b-res .icon-panel { background: linear-gradient(135deg, #0b1634, #123d52); }
+.hub-band.b-res .b-sermons-in .h-card { border-top: 1px solid rgba(255,255,255,.08); }
+.hub-band.b-res .uotd { border: 1px solid rgba(255,255,255,.1); box-shadow: none; border-radius: var(--r-lg); }
+.hub-band.b-res .uotd-head { background: #161b2b; border-bottom-color: rgba(255,255,255,.08); }
+.hub-band.b-res .uotd-head strong { color: #f2f2f2; }
+.hub-band.b-res .uotd-head a { color: #3fd29c !important; }
+.hub-band.b-res .uotd-note { background: #161b2b; color: #9fb0cf; border-top-color: rgba(255,255,255,.08); }
+.hub-band.b-res .uotd-note a { color: #3fd29c !important; }
+.hub-band.b-res .media .play span { background: rgba(0,0,0,.6); }
+.hub .media:hover .play span { background: #1cb47f; }
+</style>
+<link rel="stylesheet" href="art/page.css?v=0f265330">
+</head>
+<body>
+<!-- type: software
+     deal: hero split, nav nav-centre, close close-type, footer footer-columns, rhythm space, buttons pill, mark dots,
+           ground sky, palette from the client: logo green #1cb47f (actions), logo navy #0b1634 and cream #f4ecdc (grounds), red #ff301a only for the 10/40 Window, pairing funnel, radius round
+     moments: letters-assemble in #statement
+     plan: hero (the app on a phone) / stats app-frame / tools features-2x2 (g2) / resources split-text-left /
+           statement (moment) / how steps / pricing pricing-two / footer.closing -->
+
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="index.html" aria-label="Seen &amp; Heard home"><span class="brand-mark" aria-hidden="true"></span></a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="globe.html" data-page="globe">10/40 globe</a></div>
+      <div class="nav__item"><a class="nav__link" href="need.html" data-page="need">The need</a></div>
+      <div class="nav__item"><a class="nav__link" href="tools.html" data-page="tools">Tools</a></div>
+      <div class="nav__item"><a class="nav__link" href="resources.html" data-page="resources" aria-current="page">Resources</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="mailto:hello@seenandheard.example?subject=Here%20I%20am%2C%20send%20me">Here I am, send me</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="section section--free" id="resources" aria-labelledby="resources-h">
+    <div class="wrap">
+      <div class="grid grid--top fill">
+        <div class="span-5 stack-5">
+          <h1 id="resources-h">Missions resources in one library</h1>
+          <p class="t-lead">Short videos, Bible studies and all 14 Seen &amp; Heard podcast episodes on God's heart for the nations.</p>
+          <p>Each one ends with a next step, from praying at home to going on a short-term trip.</p>
+          <p><a class="link" href="https://podcasts.apple.com/us/podcast/seen-heard/id1737908521">Listen to Seen &amp; Heard on Apple Podcasts</a></p>
+        </div>
+        <div class="panel frame--fill span-6 start-7" style="--p-r: var(--r-lg)" role="img" aria-label="The resource library: videos, podcast episodes and study guides">
+          <div class="stage stage--fade-br">
+            <div class="at-corner wide" style="--w: 680px; --ax: 40px; --ay: 48px" data-ui-loop>
+              <div class="ui ui-files" data-ui="files" data-reading="Saving {n} of {total}">
+                <div class="ui-files__status"><span class="ui-dot"></span><span data-files-status>12 saved for offline</span></div>
+                <ul class="ui-files__grid">
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="youtube" src="assets/icons/youtube-icon.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">The Lost Son</span><span class="ui-file__kind">Video</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Far West Fishing</span><span class="ui-file__kind">Podcast</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><svg class="ui-file__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.25 2.75h8L18.75 7.25v14H6.25z"/><path d="M14 2.75v4.75h4.75M9 12.5h6.5M9 15.5h6.5M9 18.5h4"/></svg></span><span class="ui-file__name">Counting the cost.pdf</span><span class="ui-file__kind">Study</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="youtube" src="assets/icons/youtube-icon.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Care Through Prayer</span><span class="ui-file__kind">Video</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Ebenezer Moments</span><span class="ui-file__kind">Podcast</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><svg class="ui-file__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.25 2.75h8L18.75 7.25v14H6.25z"/><path d="M14 2.75v4.75h4.75M9 12.5h6.5M9 15.5h6.5M9 18.5h4"/></svg></span><span class="ui-file__name">15-second story.pdf</span><span class="ui-file__kind">Guide</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="youtube" src="assets/icons/youtube-icon.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Bartimaeus</span><span class="ui-file__kind">Video</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Embracing the Call</span><span class="ui-file__kind">Podcast</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Ordinary Faith</span><span class="ui-file__kind">Podcast</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="youtube" src="assets/icons/youtube-icon.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">15-second testimony</span><span class="ui-file__kind">Video</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><svg class="ui-file__glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.25 2.75h8L18.75 7.25v14H6.25z"/><path d="M14 2.75v4.75h4.75M9 12.5h6.5M9 15.5h6.5M9 18.5h4"/></svg></span><span class="ui-file__name">Goer guide.pdf</span><span class="ui-file__kind">Guide</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                  <li class="ui-file is-done"><span class="ui-file__icon"><img data-icon="si:applepodcasts" src="assets/icons/applepodcasts.svg" alt="" loading="lazy" width="24" height="24"></span><span class="ui-file__name">Aligning with God's Vision</span><span class="ui-file__kind">Podcast</span><span class="ui-file__bar"><i></i></span><span class="ui-file__check"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 8.2 2.3 2.3 4.7-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hub"><div class="hub-band b-res"><h3 class="hub-h" id="books">Books</h3><p class="hub-intro">Each book links to Amazon so you can pick up a copy.</p>
+  <div id="bookGroups" data-more="2" data-more-noun="books"></div>
+<div class="b-sermons-in"><h3 class="hub-h" id="sermons">Sermons</h3><p class="hub-intro">Messages on God's heart for the nations.</p>
+  <div id="sermonGroups" data-more="2" data-more-noun="sermons"></div>
+</div><h3 class="hub-h" id="films">Videos and films</h3><p class="hub-intro">Tap a thumbnail to play it on this page.</p>
+  <div id="mediaGroups" data-more="2" data-more-cards="4" data-more-noun="videos and films"></div>
+<h3 class="hub-h" id="prayer">Pray for the nations</h3><p class="hub-intro">Prayer is where missions begins.</p>
+  <h4 class="hub-group" style="margin-top:0">Unreached of the Day</h4>
+  <p class="lead" style="margin-bottom:14px">A different unreached people group is featured every day. Pray for them today.</p>
+  <div class="uotd">
+    <div class="uotd-head">
+      <strong>Today's people group</strong>
+      <span><a href="https://joshuaproject.net/pray/unreachedoftheday/today" target="_blank" rel="noopener">Open full page</a><a href="https://joshuaproject.net/pray/unreachedoftheday/email" target="_blank" rel="noopener">Daily email</a><a href="https://joshuaproject.net/pray/unreachedoftheday/app" target="_blank" rel="noopener">App</a><a href="https://joshuaproject.net/pray/unreachedoftheday/podcast" target="_blank" rel="noopener">Podcast</a></span>
+    </div>
+    <iframe src="https://joshuaproject.net/pray/unreachedoftheday/today" title="Unreached of the Day from Joshua Project" loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <div class="uotd-note">Provided live by <a href="https://joshuaproject.net/" target="_blank" rel="noopener" style="color:var(--green)">Joshua Project</a>. If it doesn't load, use "Open full page" above.</div>
+  </div>
+  <h4 class="hub-group">More ways to pray</h4>
+  <div class="h-grid" id="prayerGrid"></div>
+</div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Say yes to sharing this week</h2>
+        <p class="t-small muted">Free to start. Your first tool takes ten minutes.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="mailto:hello@seenandheard.example?subject=Here%20I%20am%2C%20send%20me">Here I am, send me<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="index.html" aria-label="Seen &amp; Heard home"><span class="brand-mark brand-mark--lg" aria-hidden="true"></span></a>
+          <p class="footer__lede">Tools to share the gospel near and far.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>Pages</h3><ul><li><a href="need.html">The need</a></li><li><a href="tools.html">Tools</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Start</h3><ul><li><a href="globe.html">The 10/40 globe</a></li><li><a href="tools.html">Tools for sharing</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Go deeper</h3><ul><li><a href="resources.html#books">Books</a></li><li><a href="resources.html#sermons">Sermons</a></li><li><a href="resources.html#prayer">Prayer</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@seenandheard.example">Email us</a></li></ul></div>
+      </div>
+      <p class="t-small muted" id="note-1">1. Joshua Project counts 7,163 unreached people groups, home to 3.64 billion people (44% of the world): groups where fewer than 2% are evangelical Christians. Country and Frontier data read October 2026.</p>
+      <div class="footer__legal">
+        <span>&copy; 2026 Seen &amp; Heard</span>
+        <div class="socials"></div>
+        <span>Product names and logos are trademarks of their owners &nbsp; <a class="credits" href="credits.html">Photographs via Wikimedia Commons</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="mailto:hello@seenandheard.example?subject=Here%20I%20am%2C%20send%20me">Here I am, send me</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>/* the Hub script runs on every page; parts whose section is on another page get a detached stand-in */
+(function (document) {const HAVE_COVER=new Set(["apostolic-church-planting", "don-t-waste-your-life", "give-your-child-the-world", "how-to-be-a-world-class-christian", "hudson-taylor-s-spiritual-secret", "jesus-in-beijing", "let-the-nations-be-glad", "no-god-but-one", "radical", "shadow-of-the-almighty", "something-needs-to-change", "the-great-omission", "the-insanity-of-god", "through-gates-of-splendor", "to-the-golden-shore"]);
+
+// image path helper: the standalone build injects window.IMG with inlined copies of every image
+const I=p=>(window.IMG&&window.IMG[p])||p;
+const amz = (t,a)=>'https://www.amazon.com/s?k='+encodeURIComponent(t+' '+(a||''));
+const ytId = u=>{const m=(u||'').match(/(?:youtu\.be\/|v=)([\w-]{11})/);return m?m[1]:null;};
+const esc = s=>String(s).replace(/"/g,'&quot;');
+
+const ICONS={
+ '411':'<div class="big">411</div>',
+ circles:'<svg viewBox="0 0 80 80"><circle cx="40" cy="26" r="18"/><circle cx="26" cy="52" r="18"/><circle cx="54" cy="52" r="18"/></svg>',
+ fields:'<svg viewBox="0 0 80 80"><rect x="10" y="10" width="26" height="26" rx="4"/><rect x="44" y="10" width="26" height="26" rx="4"/><rect x="10" y="44" width="26" height="26" rx="4"/><rect x="44" y="44" width="26" height="26" rx="4"/></svg>',
+ book:'<svg viewBox="0 0 80 80"><path d="M40 20c-8-6-20-7-28-5v46c8-2 20-1 28 5 8-6 20-7 28-5V15c-8-2-20-1-28 5zM40 20v46"/></svg>',
+ heart:'<svg viewBox="0 0 80 80"><path d="M40 68S10 50 10 29a15 15 0 0 1 30-4 15 15 0 0 1 30 4c0 21-30 39-30 39z"/></svg>',
+ walk:'<svg viewBox="0 0 80 80"><ellipse cx="28" cy="30" rx="9" ry="14"/><ellipse cx="52" cy="54" rx="9" ry="14"/><path d="M24 50v6M48 26v6"/></svg>'
+};
+
+function mediaBlock(o){
+  const id=o.video||ytId((o.links&&o.links[0]&&o.links[0][1])||'');
+  if(id && o.embed!==false){
+    return `<button class="media" data-yt="${id}" aria-label="Play video: ${esc(o.title)}"><img loading="lazy" width="480" height="360" src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt=""><span class="play"><span></span></span></button>`;
+  }
+  if(o.icon) return `<div class="icon-panel">${ICONS[o.icon]}</div>`;
+  return '';
+}
+function card(o){
+  const links=(o.links||[]).map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join('');
+  return `<div class="h-card">${mediaBlock(o)}<div class="body">${o.tag?`<span class="tag">${o.tag}</span>`:''}<h4>${o.title}</h4>${o.by?`<div class="by">${o.by}</div>`:''}<p>${o.desc||''}</p><div class="links">${links}</div></div></div>`;
+}
+function bookCard(o){
+  const cover=o.cover&&HAVE_COVER.has(o.cover)?`<div class="cover"><img loading="lazy" width="180" height="270" src="${I('img/covers/'+o.cover+'.jpg')}" alt="Cover of ${esc(o.title)}" data-title="${esc(o.title)}"></div>`:`<div class="cover"><div class="ph">${o.title}</div></div>`;
+  const buy=o.amazon?`<a class="btn-amz" href="${o.amazon}" target="_blank" rel="noopener">Buy on Amazon</a>`:(o.links||[]).map(l=>`<a class="btn-amz" href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join('');
+  return `<div class="h-card book">${cover}<div class="body"><h4>${o.title}</h4>${o.by?`<div class="by">${o.by}</div>`:''}<p>${o.desc||''}</p>${buy}</div></div>`;
+}
+const fill=(id,items)=>document.getElementById(id).innerHTML=items.map(card).join('');
+const groups=(id,gs,cls='',fn=card)=>document.getElementById(id).innerHTML=gs.map(g=>`<h4 class="hub-group">${g[0]}</h4><div class="h-grid ${cls}">${g[1].map(fn).join('')}</div>`).join('');
+
+// click-to-play: swap thumbnail for the YouTube embed
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button[data-yt]'); if(!b) return;
+  b.outerHTML=`<div class="media"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1&rel=0" title="Video player" allow="accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>`;
+});
+
+// missing cover image: show a titled placeholder instead
+document.addEventListener('error',e=>{
+  const i=e.target;
+  if(i.tagName==='IMG' && i.dataset.title){
+    const d=document.createElement('div');d.className='ph';d.textContent=i.dataset.title;i.replaceWith(d);
+  }
+},true);
+
+// tabs: show one section at a time, driven by the URL hash
+(function(){
+  const C={blue:'#6fa8dc',orange:'#ff301a',aqua:'#1cb47f',b1:'#cfe0f5',b2:'#6fa8dc',b3:'#2f5fa8'};
+  const RAMP=p=>p<1?'#22325c':p<10?'#5a2a2a':p<50?'#a3301f':p<90?'#d8301c':'#ff301a';   // same bins as the map
+  const DARKTXT=c=>c==='#ff301a'||c==='#cfe0f5'||c==='#6fa8dc'||c==='#1cb47f';
+  const SURF='#111f45',INK='#f2f2f2',INK2='#cdd6e8',MUTED='#9fb0cf',GRID='#22325c';
+  const $=id=>document.getElementById(id);
+  const NS='http://www.w3.org/2000/svg';
+
+  // one shared tooltip for every chart mark (hover, tap, or keyboard focus)
+  const tip=document.createElement('div');tip.className='vz-tip';tip.setAttribute('role','tooltip');document.body.appendChild(tip);
+  function place(x,y){const w=tip.offsetWidth,h=tip.offsetHeight;let l=x+14,t=y+14;if(l+w>innerWidth-8)l=x-w-14;if(t+h>innerHeight-8)t=y-h-14;tip.style.left=Math.max(8,l)+'px';tip.style.top=Math.max(8,t)+'px';}
+  function show(el,x,y){tip.innerHTML=el.getAttribute('data-tip');tip.classList.add('on');place(x,y);}
+  function over(e){const m=e.target.closest&&e.target.closest('[data-tip]');if(m)show(m,e.clientX,e.clientY);else tip.classList.remove('on');}
+  document.addEventListener('pointermove',over);
+  document.addEventListener('pointerdown',over);
+  document.addEventListener('focusin',e=>{const m=e.target.closest('[data-tip]');if(m){const r=m.getBoundingClientRect();show(m,r.left+r.width/2,r.top);}});
+  document.addEventListener('focusout',()=>tip.classList.remove('on'));
+
+  const esc=s=>String(s).replace(/"/g,'&quot;');
+  const T=(t,v,n)=>esc(`<b>${t}</b>${v}${n?`<br><span style="color:#cdd6e8">${n}</span>`:''}`);
+  function tableView(el,head,rows){
+    const d=document.createElement('details');d.className='tview';
+    d.innerHTML=`<summary>View as table</summary><table><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
+    el.appendChild(d);
+  }
+  const key=items=>`<div class="vz-key">${items.map(i=>`<div><i class="sw" style="background:${i.color}"></i>${i.label}<b>${i.text}</b></div>`).join('')}</div>`;
+  const svg=(vb,inner,aria)=>`<svg viewBox="0 0 ${vb[0]} ${vb[1]}" class="vz-svg" role="img" aria-label="${esc(aria)}">${inner}</svg>`;
+
+  // one stacked bar with 2px gaps (used where a single share bar is clearest)
+  function stack(el,items,o){
+    const total=items.reduce((s,i)=>s+i.v,0);
+    el.innerHTML=`<div class="vz-stack" role="img" aria-label="${esc(o.aria||'')}">`+items.map(i=>{
+      const pct=i.v/total*100;
+      return `<div class="vz-seg" tabindex="0" style="flex:${pct} 1 0;background:${i.color}" data-tip="${T(i.label,i.text,i.note)}">${pct>=12?i.short||'':''}</div>`;
+    }).join('')+`</div>`+key(items);
+    tableView(el,['Item','Value'],items.map(i=>[i.label,i.text]));
+  }
+
+  // 10 x 10 waffle: each square is 1%
+  function waffle(el,items,aria){
+    const cell=20,gap=3,n=10;let k=0,sq='';
+    items.forEach(it=>{let g='';for(let j=0;j<it.n;j++,k++){const r=Math.floor(k/n),c=k%n;g+=`<rect x="${c*(cell+gap)}" y="${r*(cell+gap)}" width="${cell}" height="${cell}" rx="3"/>`;}
+      sq+=`<g fill="${it.color}" tabindex="0" data-tip="${T(it.label,it.text,it.note)}" class="wf">${g}</g>`;});
+    const s=n*(cell+gap)-gap;
+    el.innerHTML=`<div class="vz-donut">${svg([s,s],sq,aria).replace('class="vz-svg"','class="vz-svg wafflesvg"')}<div class="key">${key(items)}</div></div>`;
+    tableView(el,['Item','Value'],items.map(i=>[i.label,i.text]));
+  }
+
+  // donut from stroke arcs
+  function donut(el,items,big,small,aria){
+    const total=items.reduce((s,i)=>s+i.v,0);let off=0;
+    const arcs=items.map(i=>{const len=i.v/total*100;const a=`<circle class="arc" tabindex="0" r="70" cx="95" cy="95" fill="none" stroke="${i.color}" stroke-width="30" pathLength="100" stroke-dasharray="${Math.max(len-.8,.3)} 100" stroke-dashoffset="${-off}" transform="rotate(-90 95 95)" data-tip="${T(i.label,i.text,i.note)}"/>`;off+=len;return a;}).join('');
+    el.innerHTML=`<div class="vz-donut">${svg([190,190],arcs+`<text x="95" y="96" font-size="28" font-weight="700">${big}</text><text x="95" y="116" font-size="12" style="fill:${INK2}">${small}</text>`,aria).replace('class="vz-svg"','class="vz-svg donutsvg"')}<div class="key">${key(items)}</div></div>`;
+    tableView(el,['Item','Value'],items.map(i=>[i.label,i.text]));
+  }
+
+  // ring gauge
+  function ring(pct,big,label,color,tipHtml){
+    return `<div class="vz-ring" tabindex="0" data-tip="${esc(tipHtml)}"><svg viewBox="0 0 130 130" role="img" aria-label="${esc(label+' '+big)}"><circle cx="65" cy="65" r="52" fill="none" stroke="${GRID}" stroke-width="14"/><circle cx="65" cy="65" r="52" fill="none" stroke="${color}" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="${pct} 100" transform="rotate(-90 65 65)"/><text x="65" y="73" text-anchor="middle" font-size="24" font-weight="700" fill="${INK}">${big}</text></svg><div>${label}</div></div>`;
+  }
+
+  // squarified treemap
+  function squarify(items,x,y,w,h){
+    const total=items.reduce((s,i)=>s+i.v,0),sc=w*h/total,out=[];let rest=items.map(i=>({...i,a:i.v*sc}));
+    const worst=(row,side)=>{const s=row.reduce((t,r)=>t+r.a,0),mx=Math.max(...row.map(r=>r.a)),mn=Math.min(...row.map(r=>r.a));return Math.max(side*side*mx/(s*s),s*s/(side*side*mn));};
+    while(rest.length){
+      const side=Math.min(w,h);let row=[rest[0]],i=1;
+      while(i<rest.length&&worst(row.concat(rest[i]),side)<=worst(row,side)){row.push(rest[i]);i++;}
+      rest=rest.slice(row.length);const s=row.reduce((t,r)=>t+r.a,0);
+      if(w>=h){const rw=s/h;let yy=y;row.forEach(r=>{const rh=r.a/rw;out.push({...r,x,y:yy,w:rw,h:rh});yy+=rh;});x+=rw;w-=rw;}
+      else{const rh=s/w;let xx=x;row.forEach(r=>{const rw=r.a/rh;out.push({...r,x:xx,y,w:rw,h:rh});xx+=rw;});y+=rh;h-=rh;}
+    }
+    return out;
+  }
+
+  // ---- country data (Joshua Project, All Countries table) ----
+  const TOTAL_UNREACHED=3638258000;
+  const COUNTRIES=/*COUNTRIES*/[["Afghanistan",44894000,58,58,44894000,100],["Algeria",47960000,37,35,47894000,99.9],["Angola",39960000,60,5,364000,0.9],["Australia",27095000,209,42,1775000,6.6],["Austria",9070000,49,16,425000,4.7],["Azerbaijan",10363000,34,25,10179000,98.2],["Bahrain",1640000,20,11,1243000,75.8],["Bangladesh",176513000,277,255,174587000,98.9],["Belgium",11627000,57,28,954000,8.2],["Benin",14959000,62,11,2753000,18.4],["Bhutan",792000,52,51,790000,99.7],["Bosnia and Herzegovina",3080000,8,3,1580000,51.3],["Brazil",212903000,323,54,771000,0.4],["Bulgaria",6571000,16,5,602000,9.2],["Burkina Faso",24381000,77,27,5804000,23.8],["Cambodia",17955000,38,16,17653000,98.3],["Cameroon",30456000,292,18,4655000,15.3],["Canada",40157000,247,56,2896000,7.2],["Central African Republic",5631000,80,7,508000,9],["Chad",21405000,141,81,12066000,56.4],["China",1394739000,546,442,139649000,10],["Comoros",873000,7,5,858000,98.3],["Democratic Republic of the Congo",115512000,231,4,816000,0.7],["Ivory Coast",32930000,105,32,7089000,21.5],["Djibouti",1161000,7,5,1131000,97.4],["Egypt",119810000,46,33,107889000,90.1],["Eritrea",3610000,15,10,1624000,45],["Ethiopia",137844000,120,30,23618000,17.1],["France",66609000,121,44,4561000,6.8],["Gambia",2833000,26,14,2406000,84.9],["Germany",83568000,108,42,5932000,7.1],["Ghana",35522000,108,16,1903000,5.4],["Greece",9809000,46,14,306000,3.1],["Guinea",15296000,42,28,13299000,86.9],["Guinea-Bissau",2240000,29,16,1081000,48.3],["India",1466463000,2263,2033,1405670000,95.9],["Indonesia",284850000,788,234,196455000,69],["Iran",93025000,91,85,92540000,99.5],["Iraq",47669000,33,27,46959000,98.5],["Israel",9498000,50,43,9232000,97.2],["Italy",58856000,103,23,1550000,2.6],["Japan",122156000,43,28,119910000,98.2],["Jordan",11551000,26,20,9877000,85.5],["Kazakhstan",20908000,53,27,16723000,80],["Kenya",58490000,102,25,5448000,9.3],["North Korea",26556000,4,2,26362000,99.3],["South Korea",51535000,30,13,487000,0.9],["Kosovo",1637000,9,6,1590000,97.1],["Kuwait",5000000,31,17,3472000,69.4],["Kyrgyzstan",7360000,25,21,7074000,96.1],["Laos",7870000,184,142,2266000,28.8],["Lebanon",5829000,26,12,3015000,51.7],["Liberia",5772000,37,6,687000,11.9],["Libya",7453000,45,34,6569000,88.1],["Madagascar",33215000,40,11,647000,1.9],["Malawi",22533000,24,5,2942000,13.1],["Malaysia",36191000,183,78,18274000,50.5],["Maldives",510000,4,4,510000,100],["Mali",25748000,72,43,23570000,91.5],["Mauritania",5366000,17,15,5353000,99.8],["Mexico",132388000,334,5,365000,0.3],["Mongolia",3485000,25,17,3257000,93.5],["Morocco",38450000,29,27,38437000,100],["Mozambique",36293000,52,12,3961000,10.9],["Myanmar",55042000,238,58,45721000,83.1],["Nepal",29288000,194,183,25913000,88.5],["Netherlands",18310000,71,20,1755000,9.6],["New Zealand",5191000,60,19,446000,8.6],["Niger",28639000,36,30,28129000,98.2],["Nigeria",242137000,531,48,73777000,30.5],["Macedonia",1783000,16,9,554000,31.1],["Norway",5550000,53,17,315000,5.7],["Oman",5626000,35,27,5011000,89.1],["Pakistan",257460000,773,765,255267000,99.1],["Philippines",117536000,200,28,6952000,5.9],["Qatar",3139000,25,14,2704000,86.1],["Russia",142549000,173,119,17975000,12.6],["Saudi Arabia",35124000,57,43,31740000,90.4],["Senegal",19118000,54,28,15655000,81.9],["Sierra Leone",8943000,27,12,1703000,19],["Singapore",5841000,40,17,1025000,17.5],["Somalia",20086000,21,19,20023000,99.7],["South Africa",65203000,63,9,1302000,2],["South Sudan",12352000,80,6,696000,5.6],["Spain",47703000,78,12,1434000,3],["Sri Lanka",23142000,127,54,3976000,17.2],["Sudan",52823000,198,168,50137000,94.9],["Sweden",10595000,74,24,581000,5.5],["Switzerland",8889000,58,17,328000,3.7],["Syria",26141000,31,20,25230000,96.5],["Taiwan",22947000,32,7,4333000,18.9],["Tajikistan",10916000,28,24,10862000,99.5],["Tanzania",72276000,154,24,6521000,9],["Thailand",71408000,110,73,61429000,86],["Togo",9790000,54,9,773000,7.9],["Tunisia",12342000,19,17,12245000,99.2],["Turkey",87756000,85,61,87051000,99.2],["Turkmenistan",7662000,28,20,7477000,97.6],["Uganda",52442000,66,2,1099000,2.1],["Ukraine",39036000,56,16,456000,1.2],["United Arab Emirates",11466000,44,36,8606000,75.1],["United Kingdom",69790000,128,46,6249000,9],["United States of America",347347000,499,93,14731000,4.2],["Uzbekistan",37645000,44,26,36315000,96.5],["Vietnam",101339000,115,68,9684000,9.6],["West Bank",5640000,8,6,5587000,99.1],["Western Sahara",588000,10,10,588000,100],["Yemen",42544000,28,20,42417000,99.7]]; // [name, population, people groups, unreached groups, people in unreached groups, % unreached]
+  const BIL=n=>n>=1e9?(n/1e9).toFixed(2)+'B':n>=1e6?Math.round(n/1e6)+'M':Math.round(n/1e3)+'K';
+
+  // 1. treemap: unreached people by country
+  (function(){
+    const top=COUNTRIES.slice().sort((a,b)=>b[4]-a[4]).slice(0,10);
+    const topSum=top.reduce((s,r)=>s+r[4],0);
+    const items=top.map(r=>({label:r[0],v:r[4],pct:r[5],groups:r[3],color:RAMP(r[5])}));
+    items.push({label:'All other countries',v:TOTAL_UNREACHED-topSum,pct:null,color:'#22325c',other:true});
+    items.sort((a,b)=>b.v-a.v);
+    const W=900,H=330,rects=squarify(items,0,0,W,H);
+    const tiles=rects.map(r=>{
+      const dk=r.other?false:DARKTXT(r.color),fg=dk?'#0b0b0b':'#fff';
+      const lab=r.w>70&&r.h>40?`<text x="${r.x+10}" y="${r.y+24}" font-size="${r.w>200?18:14}" font-weight="700" fill="${fg}">${r.label}</text><text x="${r.x+10}" y="${r.y+(r.w>200?44:40)}" font-size="${r.w>200?15:13}" fill="${fg}">${BIL(r.v)}${r.pct&&r.w>135?' · '+r.pct+'%':''}</text>`:'';
+      const tp=T(r.label,BIL(r.v)+' people in unreached groups',r.other?`${(r.v/TOTAL_UNREACHED*100).toFixed(0)}% of the world's unreached`:`${r.pct}% of the country · ${r.groups.toLocaleString()} unreached groups · ${(r.v/TOTAL_UNREACHED*100).toFixed(1)}% of the world's unreached`);
+      return `<g tabindex="0" data-tip="${tp}" class="h-tile"><rect x="${r.x+1}" y="${r.y+1}" width="${Math.max(r.w-2,1)}" height="${Math.max(r.h-2,1)}" rx="5" fill="${r.color}"/>${lab}</g>`;
+    }).join('');
+    $('cTreemap').innerHTML=svg([W,H],tiles,`Treemap of people in unreached groups: India holds ${Math.round(top[0][4]/TOTAL_UNREACHED*100)} percent`);
+    tableView($('cTreemap'),['Country','People in unreached groups','% of country'],items.map(i=>[i.label,BIL(i.v),i.pct==null?'':i.pct+'%']));
+    $('top10Title').textContent=`Ten countries hold ${Math.round(topSum/TOTAL_UNREACHED*100)}% of the world's unreached, and India alone holds ${Math.round(top[0][4]/TOTAL_UNREACHED*100)}%`;
+  })();
+
+  // 2. bubble scatter: % unreached vs people unreached
+  (function(){
+    const W=720,H=400,L=62,R=16,Tp=14,B=46,pw=W-L-R,ph=H-Tp-B;
+    const lo=Math.log10(3e5),hi=Math.log10(2e9);
+    const X=p=>L+p/100*pw,Y=v=>Tp+(1-(Math.log10(v)-lo)/(hi-lo))*ph;
+    let g='';
+    [0,25,50,75,100].forEach(p=>{g+=`<line x1="${X(p)}" x2="${X(p)}" y1="${Tp}" y2="${Tp+ph}" stroke="${GRID}"/><text x="${X(p)}" y="${Tp+ph+18}" text-anchor="middle" font-size="12" fill="${MUTED}">${p}%</text>`;});
+    [[1e6,'1M'],[1e7,'10M'],[1e8,'100M'],[1e9,'1B']].forEach(([v,l])=>{g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${GRID}"/><text x="${L-8}" y="${Y(v)+4}" text-anchor="end" font-size="12" fill="${MUTED}">${l}</text>`;});
+    g+=`<text x="${L+pw/2}" y="${H-6}" text-anchor="middle" font-size="12.5" fill="${INK2}">Share of the country's people who are unreached</text>`;
+    g+=`<text transform="translate(14 ${Tp+ph/2}) rotate(-90)" text-anchor="middle" font-size="12.5" fill="${INK2}">People in unreached groups (log scale)</text>`;
+    const pts=COUNTRIES.filter(r=>r[4]>=3e5).sort((a,b)=>b[4]-a[4]);
+    pts.forEach(r=>{const rad=Math.sqrt(r[4]/1.4e9)*30+3.5;
+      g+=`<circle class="bub2" tabindex="0" cx="${X(r[5]).toFixed(1)}" cy="${Y(r[4]).toFixed(1)}" r="${rad.toFixed(1)}" fill="${RAMP(r[5])}" fill-opacity=".92" stroke="${SURF}" stroke-width="2" data-tip="${T(r[0],r[5]+'% of people are unreached',BIL(r[4])+' of '+BIL(r[1])+' people · '+r[3].toLocaleString()+' unreached groups')}"/>`;});
+    const lab={India:[-1,0],Pakistan:[-1,-6],Bangladesh:[-1,8],Indonesia:[-1,0],China:[-1,0],Nigeria:[-1,0]};
+    pts.forEach(r=>{const l=lab[r[0]];if(!l)return;const rad=Math.sqrt(r[4]/1.4e9)*30+3.5;g+=`<text x="${(X(r[5])-rad-5).toFixed(1)}" y="${(Y(r[4])+4+l[1]).toFixed(1)}" text-anchor="end" font-size="12.5" font-weight="700" fill="${INK}" pointer-events="none">${r[0]}</text>`;});
+    $('cScatter').innerHTML=svg([W,H],g,'Bubble chart of countries by share of people who are unreached and number of unreached people; India, Pakistan and Bangladesh are the largest and almost entirely unreached');
+    tableView($('cScatter'),['Country','% unreached','People unreached'],pts.slice(0,15).map(r=>[r[0],r[5]+'%',BIL(r[4])]));
+  })();
+
+  // 3. gauge: closed countries (60%)
+  $('cClosed').innerHTML=`<div class="vz-gauge" tabindex="0" data-tip="${T('Closed to North American missionaries','60% of unreached groups','The rest (40%) are in countries open to them')}"><svg viewBox="0 0 220 130" role="img" aria-label="60 percent of unreached groups are in closed countries"><path d="M20 110 A90 90 0 0 1 200 110" fill="none" stroke="${GRID}" stroke-width="22" pathLength="100"/><path d="M20 110 A90 90 0 0 1 200 110" fill="none" stroke="#d8301c" stroke-width="22" pathLength="100" stroke-dasharray="60 100"/><text x="110" y="104" text-anchor="middle" font-size="38" font-weight="700" fill="${INK}">60%</text></svg><div>of unreached groups live in countries closed to North American missionaries</div></div>`;
+
+  // 4. waffle: Frontier share of the world
+  waffle($('cWaffle'),[
+    {label:'Frontier People Groups',n:25,color:'#d8301c',text:'2.07B people (25%)',note:'4,832 groups · 0.1% Christian or less, no movement to Jesus'},
+    {label:'Other unreached groups',n:19,color:C.orange,text:'1.57B people (19%)',note:'Unreached, but with some believers or a movement underway'},
+    {label:'Reached groups',n:56,color:'#2a3d6b',text:'4.60B people (56%)'}
+  ],'Waffle chart: 25 of 100 squares are Frontier People Groups, 19 other unreached, 56 reached');
+
+  // 5. donut: Frontier people by religion
+  donut($('cFPGRel'),[
+    {label:'Islam',v:1117.2,color:C.blue,text:'1.12B people (54%)',note:'2,372 groups'},
+    {label:'Hinduism',v:891.6,color:'#d8301c',text:'892M people (43%)',note:'1,607 groups'},
+    {label:'Buddhism, ethnic religions, other',v:56.7,color:C.aqua,text:'57M people (3%)',note:'Buddhism 15M (204 groups), ethnic religions 12M (353 groups), other 29M (296 groups)'}
+  ],'2.07B','Frontier people','Donut of Frontier people by religion: Islam 54 percent, Hinduism 43 percent, other 3 percent');
+
+  // 6. area curve: concentration
+  (function(){
+    const W=640,H=330,L=50,R=26,Tp=18,B=46,pw=W-L-R,ph=H-Tp-B;
+    const X=p=>L+p/100*pw,Y=p=>Tp+(1-p/100)*ph;
+    const pts=[[0,0],[1,46],[6,80],[10,87],[27,96],[100,100]];
+    let g='';
+    [0,25,50,75,100].forEach(p=>{g+=`<line x1="${L}" x2="${W-R}" y1="${Y(p)}" y2="${Y(p)}" stroke="${GRID}"/><text x="${L-8}" y="${Y(p)+4}" text-anchor="end" font-size="12" fill="${MUTED}">${p}%</text><text x="${X(p)}" y="${Tp+ph+18}" text-anchor="middle" font-size="12" fill="${MUTED}">${p}%</text>`;});
+    g+=`<line x1="${X(0)}" y1="${Y(0)}" x2="${X(100)}" y2="${Y(100)}" stroke="${MUTED}" stroke-width="1" stroke-dasharray="4 4"/><text x="${X(62)}" y="${Y(52)}" font-size="12" fill="${MUTED}" transform="rotate(-27 ${X(62)} ${Y(52)})">if all groups were the same size</text>`;
+    g+=`<polygon points="${X(0)},${Y(0)} ${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')} ${X(100)},${Y(0)}" fill="#d8301c" fill-opacity=".13"/><polyline points="${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')}" fill="none" stroke="#d8301c" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+    g+=`<text x="${L+pw/2}" y="${H-6}" text-anchor="middle" font-size="12.5" fill="${INK2}">Share of Frontier groups, largest first</text><text transform="translate(13 ${Tp+ph/2}) rotate(-90)" text-anchor="middle" font-size="12.5" fill="${INK2}">Share of Frontier people</text>`;
+    const marks=[[1,46,'39 groups hold 46%','39 largest groups (10M+ each)'],[6,80,'278 groups hold 80%','278 groups (1M+ each)'],[10,87,'','484 groups (500K+ each)'],[27,96,'','1,324 groups (100K+ each)']];
+    marks.forEach(m=>{g+=`<circle class="h-dot" tabindex="0" cx="${X(m[0])}" cy="${Y(m[1])}" r="5.5" fill="#d8301c" stroke="${SURF}" stroke-width="2" data-tip="${T(m[3],m[0]+'% of Frontier groups hold '+m[1]+'% of Frontier people')}"/>`;});
+    g+=`<text x="${X(1)+12}" y="${Y(46)+4}" font-size="12.5" font-weight="700" fill="${INK}">39 groups hold 46%</text><text x="${X(6)+12}" y="${Y(80)+16}" font-size="12.5" font-weight="700" fill="${INK}">278 groups hold 80%</text>`;
+    $('cCurve').innerHTML=svg([W,H],g,'Curve: the 39 largest Frontier groups hold 46 percent of Frontier people, 278 hold 80 percent, 1,324 hold 96 percent');
+    tableView($('cCurve'),['Largest groups','Share of Frontier groups','Share of Frontier people'],marks.map(m=>[m[3],m[0]+'%',m[1]+'%']));
+  })();
+
+  // 7. ring gauges: resource gaps
+  $('cGaps').innerHTML=`<div class="vz-rings">`+
+    ring(11.2,'543','groups have no Scripture','#d8301c',T('No Scripture','543 Frontier groups (11%)','22.4 million people'))+
+    ring(10.7,'518','groups have no audio recordings',C.orange,T('No audio recordings','518 Frontier groups (11%)','21.5 million people'))+`</div>`;
+  tableView($('cGaps'),['Gap','Frontier groups','People'],[['No Scripture','543 (11%)','22.4M'],['No audio recordings','518 (11%)','21.5M']]);
+
+  // 8. proportional circles: Frontier people by continent
+  (function(){
+    const W=640,H=250,base=170,rMax=88;
+    const items=[['Asia',1824,'1.82B people','3,945 groups',100],['Africa',223,'223M people','500 groups',262],['Europe',13.2,'13M people','226 groups',362],['Americas',4.3,'4M people','133 groups',452],['Australia and Pacific',.465,'0.5M people','16 groups',552]];
+    let g=`<line x1="10" x2="${W-10}" y1="${base}" y2="${base}" stroke="${GRID}"/>`;
+    items.forEach(([n,v,t,gr,cx])=>{const r=Math.max(rMax*Math.sqrt(v/1824),3);
+      g+=`<circle class="h-dot" tabindex="0" cx="${cx}" cy="${base-r}" r="${r.toFixed(1)}" fill="#d8301c" fill-opacity=".92" stroke="${SURF}" stroke-width="2" data-tip="${T(n,t,gr)}"/>`;
+      const nm=n==='Australia and Pacific'?'Australia/Pacific':n;
+      g+=`<text x="${cx}" y="${base+20}" text-anchor="middle" font-size="13" font-weight="700" fill="${INK}">${nm}</text><text x="${cx}" y="${base+38}" text-anchor="middle" font-size="12.5" fill="${INK2}">${t.replace(' people','')}</text>`;});
+    $('cCont').innerHTML=svg([W,H],g,'Circles sized by people in Frontier groups: Asia 1.82 billion, Africa 223 million, Europe 13 million, Americas 4 million, Australia and Pacific 0.5 million');
+    tableView($('cCont'),['Continent','People in Frontier groups','Frontier groups'],items.map(i=>[i[0],i[2].replace(' people',''),i[3]]));
+  })();
+
+  // 9. column chart: the imbalance
+  (function(){
+    const W=480,H=270,base=214,hMax=160,cw=76;
+    const cols=[['People in unreached groups',44.2,'44.2%','3.64B people',C.orange,['People in','unreached','groups']],['Foreign missionaries going to them',3.4,'3.4%','about 15,000 of 445,000',C.orange,['Missionaries','going to','them']],['Missions giving that reaches them',1.7,'1.7%','about $1.32B of $78B',C.orange,['Missions','giving that','reaches them']]];
+    let g=`<line x1="30" x2="${W-30}" y1="${base}" y2="${base}" stroke="#2a3d6b"/>`;
+    cols.forEach((c,i)=>{const x=50+i*140,h=Math.max(c[1]/44.2*hMax,4),y=base-h,r=5;
+      g+=`<path class="col" tabindex="0" d="M${x} ${base} V${y+r} a${r} ${r} 0 0 1 ${r} -${r} h${cw-2*r} a${r} ${r} 0 0 1 ${r} ${r} V${base} Z" fill="${c[4]}" data-tip="${T(c[0],c[2],c[3])}"/><text x="${x+cw/2}" y="${y-8}" text-anchor="middle" font-size="18" font-weight="700" fill="${INK}">${c[2]}</text>`+c[5].map((t,k)=>`<text x="${x+cw/2}" y="${base+20+k*15}" text-anchor="middle" font-size="12.5" fill="${INK2}">${t}</text>`).join('');});
+    $('cImbalance').innerHTML=svg([W,H],g,'Columns: 44.2 percent of people are unreached, but only 3.4 percent of missionaries and 1.7 percent of missions giving reach them');
+    tableView($('cImbalance'),['Measure','Share'],cols.map(c=>[c[0],c[2]]));
+  })();
+
+  // 10. ring gauge: workers needed
+  $('cWorkers').innerHTML=`<div class="vz-rings">`+ring(19.8,'1 in 5','of the workers needed are there',C.orange,T('Workers needed vs. serving','About 15,000 of 75,768 (20%)','Joshua Project estimate vs. Gordon-Conwell count'))+`</div><div class="vz-cap" style="text-align:center;margin-top:10px">75,768 needed · about 15,000 serving</div>`;
+  tableView($('cWorkers'),['Measure','Number'],[['Workers needed','75,768'],['Foreign missionaries serving unreached groups','about 15,000']]);
+
+  // 11. funnel: money
+  (function(){
+    const W=470,H=330,cx=175,wMax=340;
+    const tiers=[['Given to Christian causes','$1.3 trillion',1,C.blue,''],['Given to general missions','$78 billion',78/1300,C.blue,'6% of all giving'],['Reaches the unreached','$1.3 billion',1.32/1300,C.orange,'1.7% of missions giving']];
+    const ws=tiers.map(t=>Math.max(wMax*t[2],2));
+    let g='';
+    for(let i=0;i<3;i++){const y=i*108,h=100,top=ws[i],bot=i<2?ws[i+1]:ws[i];
+      g+=`<path class="col" tabindex="0" d="M${cx-top/2} ${y} L${cx+top/2} ${y} L${cx+bot/2} ${y+h} L${cx-bot/2} ${y+h} Z" fill="${tiers[i][3]}" data-tip="${T(tiers[i][0],tiers[i][1],tiers[i][4])}"/>`;}
+    g+=`<text x="${cx}" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#0b0b0b">$1.3 trillion</text><text x="${cx}" y="64" text-anchor="middle" font-size="13" fill="#0b0b0b">given to Christian causes</text>`;
+    g+=`<text x="${cx+30}" y="${108+40}" font-size="16" font-weight="700" fill="${INK}">$78 billion</text><text x="${cx+30}" y="${108+58}" font-size="13" fill="${INK2}">to general missions (6%)</text>`;
+    g+=`<text x="${cx+30}" y="${216+40}" font-size="16" font-weight="700" fill="${INK}">$1.3 billion</text><text x="${cx+30}" y="${216+58}" font-size="13" fill="${INK2}">reaches the unreached (1.7%)</text>`;
+    $('cFunnel').innerHTML=svg([W,H],g,'Funnel: $1.3 trillion given to Christian causes narrows to $78 billion for missions and about $1.3 billion for the unreached');
+    tableView($('cFunnel'),['Stage','Amount'],tiers.map(t=>[t[0],t[1]]));
+  })();
+
+  // 12. radial bars: % of each religion's groups unreached
+  (function(){
+    const W=360,H=340,cx=180,cy=170,items=[['Hinduism',92,'2,203 of 2,395 groups',130],['Islam',86,'3,462 of 4,031 groups',104],['Buddhism',77,'511 of 666 groups',78],['Animism',35,'923 of 2,625 groups',52]];
+    let g='';
+    items.forEach(([n,p,note,r])=>{const c=2*Math.PI*r;
+      g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${GRID}" stroke-width="18" pathLength="100" stroke-dasharray="75 100" transform="rotate(-90 ${cx} ${cy})"/>`;
+      g+=`<circle class="arc" tabindex="0" cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${p<50?C.blue:C.orange}" stroke-width="18" stroke-linecap="round" pathLength="100" stroke-dasharray="${(75*p/100).toFixed(2)} 100" transform="rotate(-90 ${cx} ${cy})" data-tip="${T(n,p+'% of groups are unreached',note)}"/>`;
+      g+=`<text x="${cx-10}" y="${cy-r+5}" text-anchor="end" font-size="13" font-weight="700" fill="${INK}">${n} ${p}%</text>`;});
+    $('cRadial').innerHTML=svg([W,H],g,'Radial bars: 92 percent of Hindu, 86 percent of Muslim, 77 percent of Buddhist and 35 percent of Animist people groups are unreached');
+    tableView($('cRadial'),['Religion','Unreached groups'],items.map(i=>[i[0],i[1]+'% ('+i[2]+')']));
+  })();
+
+  // 13. waffle: languages
+  waffle($('cLang'),[
+    {label:'Full Bible',n:10,color:C.b1,text:'736 languages',note:'10% of languages'},
+    {label:'New Testament only',n:22,color:C.b2,text:'1,658 languages',note:'22% of languages'},
+    {label:'Some portions only',n:17,color:C.b3,text:'1,264 languages',note:'17% of languages'},
+    {label:'No Scripture',n:51,color:C.orange,text:'3,736 languages',note:'51% · about 1,100 may not need one'}
+  ],'Waffle chart of 7,394 languages: 10 percent full Bible, 22 percent New Testament, 17 percent portions, 51 percent none');
+
+  // 14. close to home
+  stack($('cUSA'),[
+    {label:'International students from 10/40 Window countries',v:78,text:'78% · 778,000+ students (2023)',short:'78%',color:C.orange},
+    {label:'International students from other countries',v:22,text:'22%',short:'22%',color:C.blue}
+  ],{aria:'78 percent of international students in the USA come from 10/40 Window countries'});
+  $('cUSA').insertAdjacentHTML('afterbegin','<p class="vz-cap" style="margin:0 0 10px">The U.S. is home to 14.7 million people in unreached groups, and over a million international students arrive each year.</p>');
+})();
+
+// pictograms
+(function(){
+  const mk=(id,on)=>{document.getElementById(id).innerHTML=Array.from({length:100},(_,i)=>`<svg viewBox="0 0 20 34" class="${i<on?'on':''}"><use href="#person"/></svg>`).join('');};
+  mk('peopleWorld',44); mk('peopleMiss',3);
+})();
+
+fill('toolGrid',[
+ {icon:'411',tag:'Training',title:'411 Training',desc:'Four questions answered on one piece of paper in under an hour: Why (identity in Christ), Who (your oikos map), What (testimony and 3 Circles), and When (set goals).',links:[['Open','https://noplaceleft.net/four-fields/411-gospel-conversation-training/']]},
+ {tag:'Relationships',title:'Oikos Map',desc:'Map the people in your relational network (family, friends, coworkers, neighbors) so you know who God has put in your path to reach.',links:[['Watch on YouTube','https://youtu.be/D5az2LAtDDw']]},
+ {tag:'Sharing',title:'15-Second Testimony',desc:'Learn to share your story in a few sentences: your life before Jesus, how He changed you, and what He means to you now.',links:[['Watch on YouTube','https://youtu.be/hkprflNySS8']]},
+ {icon:'circles',tag:'Gospel',title:'3 Circles (God\'s Story)',desc:'A simple sketch that walks through God\'s design, brokenness, and the gospel, easy to draw on a napkin and share in any conversation.',links:[['Open','https://noplaceleft.net/3-circles-gospel/']]},
+ {icon:'heart',tag:'Prayer',title:'Care Through Prayer',desc:'Instead of "How are you?", ask "Is there anything in your life that needs prayer?" Praying with someone is a warm, natural bridge to a gospel conversation.',links:[['Read more','https://rightfromtheheart.org/devotions/care-through-prayer/']]},
+ {icon:'book',tag:'Discovery',title:'Discovery Bible Study: 7 Stories of Hope',desc:'Seven Bible stories for group discovery. Read together and ask simple questions: What does this say? What will I do? Who will I share it with?',links:[['Open document','https://docs.google.com/document/d/1M4_IILSlmRF5ivsw3mVl8r9PKfjCEWfiesZSa0rAhYs']]},
+ {video:'cEiLWwJb-lo',tag:'Obedience',title:'Commands of Christ',desc:'The things Jesus told His followers to do, gathered so new believers can learn to obey everything He commanded.',links:[['Website','https://www.cmdsofchrist.com'],['Video','https://youtu.be/cEiLWwJb-lo'],['Document','https://drive.google.com/file/d/1eU1eYazVzDxmzq42BOg533AqqDvkCXim/view']]},
+ {icon:'fields',tag:'Framework',title:'Four Fields Overview',desc:'The big picture of kingdom growth: Entry, Gospel, Discipleship, and Church, plus leadership development, with a tool for each field.',links:[['Overview','https://noplaceleft.net/four-fields/'],['Diagram','https://docs.google.com/drawings/d/1qnBlYEnLGbaL5hHDZegvknE7N2jkj3ngPEIxnTIKTmE/']]},
+ {icon:'walk',tag:'Prayer',title:'Prayer Walking',desc:'Pray on-site as you walk through a neighborhood, campus, or workplace: give thanks, bless the people there, and ask God to open doors for the gospel.',links:[['How-to guide','https://navigators.org/resource/prayer-walk']]},
+ {tag:'Coaching',title:'MAWL',desc:'Model, Assist, Watch, Leave: a four-step way to train others. You do it, they do it with you, you watch them do it, then you step back so they can multiply.',links:[['Watch on YouTube','https://www.youtube.com/watch?v=kfLmMfQjI8o'],['MAWL map','https://docs.google.com/spreadsheets/d/1477LKxAMTGVSnQ36OBk8Dr4qslSjABYzFdk8FMpYOJU/edit#gid=1703549713']]},
+ {tag:'Church',title:'Church Circle',desc:'A picture of healthy church life drawn from Acts 2:36-47: repenting, being baptized, learning, fellowship, breaking bread, prayer, giving, and worship.',links:[['Watch on YouTube','https://www.youtube.com/watch?v=ftf_2Gq_-Co'],['Website','https://www.cmdsofchrist.com/home']]}
+]);
+
+const B=(title,by,desc,cover)=>({title,by,desc,cover,amazon:amz(title,by)});
+groups('bookGroups',[
+ ['Vision for the nations',[
+  B('Let the Nations Be Glad','John Piper','A classic on why missions exists: God\'s glory and the supremacy of Christ among all peoples.','let-the-nations-be-glad'),
+  B('Radical','David Platt','A challenge to leave the comforts of the American dream and take Jesus\' call seriously, at home and abroad.','radical'),
+  B('Something Needs to Change','David Platt','Platt\'s account of seeing poverty and spiritual need in India and what it should do to our hearts.','something-needs-to-change'),
+  B('Don\'t Waste Your Life','John Piper','A call to spend your one life on what matters most: treasuring Christ and making Him known.','don-t-waste-your-life'),
+  B('The Great Omission','Robertson McQuilkin','A short, convicting look at the neglect of making disciples of all nations.','the-great-omission'),
+  B('How to Be a World Class Christian','Paul Borthwick','Practical ways to see the world through God\'s eyes and live with a global perspective.','how-to-be-a-world-class-christian')
+ ]],
+ ['Movements and the persecuted church',[
+  B('The Insanity of God','Nik Ripken','Nik and Ruth Ripken\'s journey through Somalia and the persecuted church, and what they learned about faith under pressure.','the-insanity-of-god'),
+  B('Miraculous Movements','Jerry Trousdale','Stories of Muslims coming to Christ in large numbers and what disciple-making looks like on the ground.','miraculous-movements'),
+  B('Spiritual Multiplication in the Real World','Bob McNabb','A practical guide to making disciples who make disciples, in everyday settings.','spiritual-multiplication-in-the-real-world'),
+  B('Apostolic Church Planting','J.D. Payne','A biblical look at how Paul and the early church planted churches, and what it means today.','apostolic-church-planting'),
+  B('Making the Blind Man Lame','Michael Johnson','A thoughtful look at how short-term and long-term missions can serve the church well.','making-the-blind-man-lame'),
+  B('Jesus in Beijing','David Aikman','How Christianity is growing in China and what it could mean for the world.','jesus-in-beijing'),
+  B('No God But One: Allah or Jesus?','Nabeel Qureshi','A former Muslim\'s story and careful comparison of Islam and Christianity.','no-god-but-one')
+ ]],
+ ['Missionary biographies',[
+  B('To the Golden Shore: The Life of Adoniram Judson','Courtney Anderson','The story of the first American missionary to Burma and his years of suffering and perseverance.','to-the-golden-shore'),
+  B('Shadow of the Almighty: The Life and Testament of Jim Elliot','Elisabeth Elliot','A portrait of Jim Elliot\'s devotion to Christ, told through his journals and letters.','shadow-of-the-almighty'),
+  B('Through Gates of Splendor','Elisabeth Elliot','The account of five missionaries killed in Ecuador and the gospel\'s later reach to the Waodani.','through-gates-of-splendor'),
+  B('Hudson Taylor\'s Spiritual Secret','Dr. and Mrs. Howard Taylor','How a pioneer to inland China learned to depend on God for everything.','hudson-taylor-s-spiritual-secret')
+ ]],
+ ['From The Traveling Team',[
+  {title:'Live Life on Purpose',by:'The Traveling Team',desc:'$10',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/6hnmfyrxe0p0965ib9blvx25q20wiw']]},
+  {title:'Here I Am, Send My Sister',by:'The Traveling Team',desc:'$10',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/here-i-am-send-my-sister']]},
+  {title:'Abrahamic Revolution',by:'The Traveling Team',desc:'$12',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/jolk2ds2yzehxj68d4gnwo1fom9ewa']]},
+  {title:'It\'s All Backward',by:'The Traveling Team',desc:'$5',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/its-all-backward']]},
+  {title:'In This Generation',by:'The Traveling Team',desc:'$10',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/eveikrfe6e16lf7943ff8ch8c0xf05']]},
+  {title:'Ten Modules',by:'The Traveling Team',desc:'Twenty years of advice and simple tools to help you awaken others to their place in God\'s mission. $10',links:[['Get it','https://www.thetravelingteam.org/booksandmerch/ten-modules']]},
+  {title:'Hold Fast',by:'The Traveling Team',desc:'Currently sold out.',links:[['View','https://www.thetravelingteam.org/booksandmerch/hold-fast']]},
+  {title:'Gen Z Misunderstood',by:'The Traveling Team',desc:'Changing the narrative on today\'s misfits and dreamers. Currently sold out.',links:[['View','https://www.thetravelingteam.org/booksandmerch/gen-z-misunderstood-changing-the-narrative-on-todays-misfits-and-dreamers']]}
+ ]]
+],'books',bookCard);
+
+const S=(title,by,url,desc)=>({title,by,desc,links:[['Listen / watch',url]]});
+groups('sermonGroups',[
+ ['David Platt',[
+  S('Our Obligation to the Unreached, Part 1','David Platt','https://radical.net/sermon/our-obligation-to-the-unreached-part-1/'),
+  S('Our Obligation to the Unreached, Part 2','David Platt','https://radical.net/sermon/our-obligation-to-the-unreached-part-2/'),
+  S('The Blank Check','David Platt','https://radical.net/sermon/the-blank-check/'),
+  S('Reaching the Nations (collection)','David Platt','https://radical.net/articles/tag/reaching-the-nations/?type=sermon')
+ ]],
+ ['John Piper (Desiring God)',[
+  S('Psalm 96: Declare His Glory Among the Nations','John Piper','https://desiringgod.org/messages/declare-his-glory-among-the-nations'),
+  S('Doing Missions When Dying Is Gain','John Piper','https://desiringgod.org/messages/doing-missions-when-dying-is-gain'),
+  S('Missions Exists Because Worship Doesn\'t','John Piper','https://desiringgod.org/messages/missions-exists-because-worship-doesnt-a-bethlehem-legacy-inherited-and-bequeathed'),
+  S('John 10: I Have Other Sheep That Are Not of This Fold','John Piper','https://desiringgod.org/messages/i-have-other-sheep-that-are-not-of-this-fold'),
+  S('Adoniram Judson: How Few There Are Who Die So Hard','John Piper','https://desiringgod.org/messages/how-few-there-are-who-die-so-hard'),
+  S('John Paton: You Will Be Eaten by Cannibals','John Piper','https://desiringgod.org/messages/you-will-be-eaten-by-cannibals-lessons-from-the-life-of-john-g-paton'),
+  S('William Tyndale: Always Singing One Note, a Vernacular Bible','John Piper','https://desiringgod.org/messages/always-singing-one-note-a-vernacular-bible'),
+  S('Cross Conference sermons and breakouts','Cross Conference','https://crossforthenations.org/resources/')
+ ]],
+ ['The Traveling Team',[
+  S('Mission in Motion (video series)','Todd Ahrend & Claude Hickman','https://app.rightnowmedia.org/en/content/details/739104','How ordinary people can make Christ known around the world. Streams on RightNow Media.'),
+  S('The Great Commission(s), Obstacles to Mission & Mobilization series','The Traveling Team','https://www.thetravelingteam.org/videos','Video series on mobilizing believers for the nations.'),
+  S('More videos on Vimeo','The Traveling Team','https://vimeo.com/thetravelingteam')
+ ]]
+]);
+
+const V=(title,url,desc)=>({title,desc,links:[['Watch',url]]});
+groups('mediaGroups',[
+ ['Short videos',[
+  V('Reaching the Unreached (4:20)','https://www.youtube.com/watch?v=eIDraNUGerE','Pastor Chris Lazo of Reality Santa Barbara on the opportunity before the church to engage unreached people groups, and what we can do about it.'),
+  V('State of the World / Task Remaining (4:36)','https://youtube.com/watch?v=WrHC7hXNoV8'),
+  V('The Biblical Basis of Missions (6:30)','https://youtube.com/watch?v=JmtfBZyO_hI'),
+  V('God\'s Heart for the Foreigner (5:11)','https://youtube.com/watch?v=sd4IEuPvQw8'),
+  V('What Is a UPG? (2:59)','https://youtube.com/watch?v=4nbXRuStiiE'),
+  V('John Piper on 1,568 Unengaged People Groups (2:34)','https://youtube.com/watch?v=loJ95MlKNHE'),
+  V('JD Greear: "Here Am I, Send Me" (2:00)','https://youtube.com/watch?v=oJNg6G-0NZk'),
+  V('Risk It All: David Platt and IMB (2:28)','https://youtube.com/watch?v=bIib2KFZ9OY'),
+  V('6 Ways to Reach the Nations (5 min)','https://omf.org/us/6-ways/'),
+  V('IMB Video Gallery','https://imb.org/video-gallery/'),
+  V('Beyond: videos on movements and the unreached','https://beyond.org/videos/')
+ ]],
+ ['Films',[
+  V('End of the Spear (2005, 1h48)','https://www.amazon.com/s?k=End+of+the+Spear+movie','Jim Elliot and companions are killed while engaging the Auca tribe.'),
+  V('The Insanity of God (2016, 1h47)','https://www.lifeway.com/en/search?q=The+Insanity+of+God+DVD','Nik and Ruth Ripken and the persecuted church.'),
+  V('Sheep Among Wolves, Vol. I (1h05)','https://youtube.com/watch?v=Ndf8RqgNVEY','Documentary on the persecuted church and work in the Middle East.'),
+  V('Sheep Among Wolves, Vol. II (1h53)','https://youtube.com/watch?v=9SAPOLKF59U','Documentary on the Iranian and persecuted church.'),
+  V('Never the Same: 50 Years Since Peace Child (15:47)','https://youtube.com/watch?v=mm6R9EPtMHo','Celebrating the gospel\'s arrival in Papua New Guinea.'),
+  V('Ee-Taow: The Mouk Story (23:56)','https://youtube.com/watch?v=hjRTBQcf-uc','An Ethnos360 story from Papua New Guinea.'),
+  V('A Cry from Iran (2007, 54 min)','https://www.amazon.com/Cry-Iran-Andre-Hovsepian/dp/B06XDT26WS','The story of martyred pastor Haik Hovsepian.'),
+  V('Share Their Voice (2019)','https://secure.persecution.com/p-7018-share-their-voice-dvd-2019.aspx','Twelve short testimonies from persecuted Christians around the world. Voice of the Martyrs.')
+ ]]
+]);
+
+fill('prayerGrid',[
+ {title:'Joshua Project',desc:'Pray for an unreached people group every day with the Unreached of the Day app.',links:[['Visit','https://joshuaproject.net']]},
+ {title:'Pray for Every Village',desc:'Prayer focus for unreached villages in South Asia.',links:[['Visit','https://pray4ev.org']]},
+ {title:'Prayercast',desc:'3–5 minute prayer videos for countries, major cities, and leaders.',links:[['Watch','https://prayercast.com/nations.html']]},
+ {title:'Shine On: Psalm 67',desc:'A 7:30 Prayercast video built on Psalm 67.',links:[['Watch','https://vimeo.com/23929798']]}
+]);
+
+
+})(new Proxy(window.document, { get(t, k) { if (k === "getElementById") return id => t.getElementById(id) || t.createElement("div"); const v = t[k]; return typeof v === "function" ? v.bind(t) : v; } }));</script>
+<script src="art/scroll.js?v=b73dfc16" defer></script>
+<script src="art/more.js?v=99228427" defer></script>
+<script src="art/count.js?v=6be76678" defer></script>
+<script src="art/progress.js?v=f99d2e51" defer></script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>

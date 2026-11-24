@@ -1,0 +1,60 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-f165348522-960.jpg",
+   "files": [
+    "photo-f165348522-500.jpg",
+    "photo-f165348522-960.jpg"
+   ],
+   "id": "f165348522",
+   "alt": "Fès, Morocco (318142728)",
+   "by": "Ninara",
+   "licence": "CC BY 2.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:F%C3%A8s,_Morocco_(318142728).jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f82830311-500.jpg",
+   "files": [
+    "photo-f82830311-500.jpg"
+   ],
+   "id": "f82830311",
+   "alt": "Naqsh-e Jahan Square from the gheisariye Vault",
+   "by": "Amir Pashaei",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Naqsh-e_Jahan_Square_from_the_gheisariye_Vault.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f106143621-960.jpg",
+   "files": [
+    "photo-f106143621-500.jpg",
+    "photo-f106143621-960.jpg"
+   ],
+   "id": "f106143621",
+   "alt": "Varanasi, India, Ganges River, ghats, temples and embankments",
+   "by": "Vyacheslav Argenberg",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Varanasi,_India,_Ganges_River,_ghats,_temples_and_embankments.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f71590239-960.jpg",
+   "files": [
+    "photo-f71590239-500.jpg",
+    "photo-f71590239-960.jpg"
+   ],
+   "id": "f71590239",
+   "alt": "Untitled",
+   "by": "Chi King",
+   "licence": "CC BY 3.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shijo_Street_in_evening_at_Gion.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}
